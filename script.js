@@ -33,7 +33,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     }
 
     if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}/.test(password)) {
-        document.getElementById("passwordError").textContent = "Slaptažodis turėtų būti 8 simbolių ilgio, įskaitant, didžiąsias, mažąsias raides, skaičius ir specialiuosius simbolius";
+        document.getElementById("passwordError").textContent = "Slaptažodis turėtų būti 8 simbolių ilgio, įskaitant didžiąsias, mažąsias raides, skaičius ir specialiuosius simbolius";
         isValid = false;
     }
 
