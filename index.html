@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Registracijos forma</h1>
+        <form id="registrationForm">
+            <label for="name">Vardas:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="email">El. paštas:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="age">Amžius:</label>
+            <input type="number" id="age" name="age" required>
+            <span class="error" id="ageError"></span>
+
+            <label for="phone">Telefono numeris:</label>
+            <input type="text" id="phone" name="phone" placeholder="+XXX XXX XXXXX" required>
+            <span class="error" id="phoneError"></span>
+
+            <label for="password">Slaptažodis:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="passwordError"></span>
+
+            <label for="confirmPassword">Patvirtinti slaptažodį:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span class="error" id="confirmPasswordError"></span>
+
+            <button type="submit">Registruotis</button>
+        </form>
+        <div id="successMessage"></div>
+    </div>
+</body>
+</html>
